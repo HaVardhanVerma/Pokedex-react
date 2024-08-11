@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@500&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 91);
+}
+
+.section_header {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 1rem;
+    font-size: larger;
+    /* background-color: rgb(255, 86, 86); */
+}
+
+.img_1 {
+    width: 4rem;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform: rotate(30deg);
+}
+
+.img_2 {
+    width: 4rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    transform: rotate(-30deg);
+}
+
+.section_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding-block: 1rem;
+    /* border: 2px solid black; */
+}
+
+.input_area {
+    min-width: 20rem;
+    padding-block: 1rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    /* border: none; */
+    border-top: 2px solid rgb(250, 71, 71);
+    border-bottom: 2px solid rgb(204, 203, 203);
+}
+
+.section_container {
+    padding: 2rem;
+}
+
+.Pokemon_container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    /* justify-content: center; */
+    align-self: center;
+}
+
+.Pokemon_card {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    min-width: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: fit-content;
+    /* position: relative; */
+    overflow: hidden;
+    cursor: pointer;
+    /* padding: 2rem; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2rem;
+    background-color: wheat;
+    z-index: -1;
+}
+
+.Pokemon_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 2px solid black; */
+    height: fit-content;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: rgb(255, 86, 86);
+    z-index: -100;
+    position: relative;
+    overflow: hidden;
+}
+
+.pokemon_image {
+    width: 10rem;
+    /* position: relative; */
+    margin-top: 1.5rem;
+}
+
+.pokeball_image_1 {
+    width: 8rem;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    /* bottom: -10px; */
+    z-index: -1;
+    transform: rotate(30deg);
+    /* opacity: 0.7; */
+}
+
+.pokeball_image_2 {
+    width: 8rem;
+    position: absolute;
+    bottom: -25px;
+    left: -25px;
+    /* bottom: -10px; */
+    z-index: -1;
+    transform: rotate(30deg);
+    /* opacity: 0.7; */
+}
+
+.pokeball_image_4 {
+    width: 20rem;
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+    /* right:30px; */
+    z-index: -1;
+    /* transform: rotate(45deg); */
+    opacity: 0.5;
+}
+
+.pokemon_name {
+    font-size: 2rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* margin-top: 2rem; */
+}
+
+.pokemon_types {
+    padding: 1rem;
+    /* border: 2px solid black; */
+    border-radius: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(0, 241, 0);
+    color: white;
+    /* margin-top: 2rem; */
+}
+
+.pokemon_properties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 1.5rem;
+    /* margin-top: 2rem; */
+    /* border: 2px solid black; */
+    width: 100%;
+    position: relative;
+}
+
+.pokemon_prop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    /* border: 2px solid black; */
+}
+
+.prop_key {
+    font-weight: 900;
+} 
+
+.prop_value {
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px){
+    .Pokemon_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1067px){
+    .Pokemon_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section_header {
+        font-size: 5rem;
+    }
+
+    .img_1 {
+        width: 10rem;
+        top: -30px;
+        left: -30px;
+    }
+
+    .img_2 {
+        width: 10rem;
+        top: -30px;
+        right: -30px;
+    }
+
+    .input_area {
+        min-width: 30rem;
+    }
+}
