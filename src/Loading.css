@@ -29,7 +29,10 @@
 
 @media screen and (max-width: 768px){
     .LoadingBall {
-        margin-top: 10rem;
-        /* width: 5rem; */
+        margin-top: 25rem;
+    }
+
+    .loading_Pokeball {
+        width: 4rem;
     }
 }
