@@ -35,7 +35,7 @@ export const Pokemon = () => {
 
             // console.log("This is getUrl:- ", finalUrl);
             setPokemon(finalUrl);
-            console.log("Hello I am here:");
+            // console.log("Hello I am here:");
             setLoad(true);
 
 
